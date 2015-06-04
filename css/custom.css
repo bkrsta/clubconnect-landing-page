@@ -143,13 +143,8 @@ strong {
   margin-top: 100px;
 }
 
-
-#intro.video .content {
-  margin-top: 140px;
-}
-
 #intro .content.subscribe {
-  margin-top: 16.5%;
+  margin-top: 100%/2;
 }
 
 #intro .btn {
