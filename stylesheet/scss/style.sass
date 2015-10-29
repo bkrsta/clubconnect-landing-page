@@ -1,0 +1,136 @@
+@import reset.sass
+@import variables.sass
+@import breakpoints.sass
+
+.landing-section
+  width: 100vw
+  height: 100vh
+  font-family: 'Poppins', sans-serif
+  overflow: hidden
+  .main
+    height: 100vh
+    background-color: #232337
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/background.jpg")
+    background-position: center
+    background-size: cover
+    background-repeat: no-repeat
+  h3
+    display: inline
+    position: relative
+    top: 80px
+    left: 75px
+    color: #ffce80
+    font-size: 1.6em
+    padding: 15px
+    border: 2px solid $primary-color
+    .logo-bold
+      font-weight: 700
+  .form
+    width: 60%
+    margin-left: auto
+    margin-right: auto
+    text-align: center
+    position: relative
+    top: calc(50% - 140px)
+    color: #fff
+    .hello-text
+      font-size: 2.5em
+      font-weight: bold
+    .description
+      margin-top: 15px
+      font-size: 1.2em
+      font-weight: 300
+    .form-email
+      position: relative
+      margin-top: 50px
+      margin-left: auto
+      margin-right: auto
+      width: 500px
+      +bp-xl
+        width: 480px
+      +bp-lg
+        width: 440px
+      +bp-md
+        width: 380px
+      +bp-sm
+        width: 300px
+      .input-email
+        width: 350px
+        height: 50px
+        box-sizing: border-box
+        position: absolute
+        left: 0
+        padding-left: 30px
+        padding-right: 30px
+        color: #999
+        font-size: 20px
+        border: 0
+        border-top-left-radius: 50px
+        border-bottom-left-radius: 50px
+        &:focus
+          outline: none
+        &:focus::-webkit-input-placeholder,
+        &:focus::-moz-input-placeholder
+          color: transparent
+        +bp-xl
+          width: 340px
+        +bp-lg
+          width: 320px
+        +bp-md
+          width: 290px
+          height: 45px
+          font-size: 18px
+        +bp-sm
+          width: 220px
+          height: 40px
+          font-size: 16px
+      .submit-email
+        position: absolute
+        right: 0
+        width: 150px
+        height: 50px
+        color: #fff
+        font-size: 20px
+        background-color: #2ECC71
+        border: 0
+        border-top-right-radius: 50px
+        border-bottom-right-radius: 50px
+        &:hover
+          cursor: pointer
+        &:active
+          background: #27ae60
+        &:focus
+          outline: none
+        +bp-xl
+          width: 140px
+        +bp-lg
+          width: 120px
+        +bp-md
+          width: 90px
+          height: 45px
+          font-size: 18px
+        +bp-sm
+          width: 80px
+          height: 40px
+          font-size: 16px
+      .spam
+        position: absolute
+        top: 55px
+        left: 30px
+        color: #fff
+        font-size: 15px
+        font-style: italic
+        +bp-md
+          top: 50px
+        +bp-sm
+          top: 45px
+  //footer
+    width: 100%
+    height: 15vh
+    position: relative
+    bottom: 0
+    background-color: #141421
+    // background-image: url("../../img/sponsors.png")
+    // background-position: center
+    // background-size: contain
+    // background-repeat: no-repeat

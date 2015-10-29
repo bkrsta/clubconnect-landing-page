@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+ * v2.0 | 20110126
+ * License: none (public domain) */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.landing-section {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden; }
+  .landing-section .main {
+    height: 100vh;
+    background-color: #232337;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../img/background.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .landing-section h3 {
+    display: inline;
+    position: relative;
+    top: 80px;
+    left: 75px;
+    color: #ffce80;
+    font-size: 1.6em;
+    padding: 15px;
+    border: 2px solid #ffce80; }
+    .landing-section h3 .logo-bold {
+      font-weight: 700; }
+  .landing-section .form {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    position: relative;
+    top: calc(50% - 140px);
+    color: #fff; }
+    .landing-section .form .hello-text {
+      font-size: 2.5em;
+      font-weight: bold; }
+    .landing-section .form .description {
+      margin-top: 15px;
+      font-size: 1.2em;
+      font-weight: 300; }
+    .landing-section .form .form-email {
+      position: relative;
+      margin-top: 50px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 500px; }
+      @media only screen and (max-width: 78.75em) {
+        .landing-section .form .form-email {
+          width: 480px; } }
+      @media only screen and (max-width: 60em) {
+        .landing-section .form .form-email {
+          width: 440px; } }
+      @media only screen and (max-width: 48em) {
+        .landing-section .form .form-email {
+          width: 380px; } }
+      @media only screen and (max-width: 40em) {
+        .landing-section .form .form-email {
+          width: 300px; } }
+      .landing-section .form .form-email .input-email {
+        width: 350px;
+        height: 50px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 0;
+        padding-left: 30px;
+        padding-right: 30px;
+        color: #999;
+        font-size: 20px;
+        border: 0;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px; }
+        .landing-section .form .form-email .input-email:focus {
+          outline: none; }
+        .landing-section .form .form-email .input-email:focus::-webkit-input-placeholder, .landing-section .form .form-email .input-email:focus::-moz-input-placeholder {
+          color: transparent; }
+        @media only screen and (max-width: 78.75em) {
+          .landing-section .form .form-email .input-email {
+            width: 340px; } }
+        @media only screen and (max-width: 60em) {
+          .landing-section .form .form-email .input-email {
+            width: 320px; } }
+        @media only screen and (max-width: 48em) {
+          .landing-section .form .form-email .input-email {
+            width: 290px;
+            height: 45px;
+            font-size: 18px; } }
+        @media only screen and (max-width: 40em) {
+          .landing-section .form .form-email .input-email {
+            width: 220px;
+            height: 40px;
+            font-size: 16px; } }
+      .landing-section .form .form-email .submit-email {
+        position: absolute;
+        right: 0;
+        width: 150px;
+        height: 50px;
+        color: #fff;
+        font-size: 20px;
+        background-color: #2ECC71;
+        border: 0;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px; }
+        .landing-section .form .form-email .submit-email:hover {
+          cursor: pointer; }
+        .landing-section .form .form-email .submit-email:active {
+          background: #27ae60; }
+        .landing-section .form .form-email .submit-email:focus {
+          outline: none; }
+        @media only screen and (max-width: 78.75em) {
+          .landing-section .form .form-email .submit-email {
+            width: 140px; } }
+        @media only screen and (max-width: 60em) {
+          .landing-section .form .form-email .submit-email {
+            width: 120px; } }
+        @media only screen and (max-width: 48em) {
+          .landing-section .form .form-email .submit-email {
+            width: 90px;
+            height: 45px;
+            font-size: 18px; } }
+        @media only screen and (max-width: 40em) {
+          .landing-section .form .form-email .submit-email {
+            width: 80px;
+            height: 40px;
+            font-size: 16px; } }
+      .landing-section .form .form-email .spam {
+        position: absolute;
+        top: 55px;
+        left: 30px;
+        color: #fff;
+        font-size: 15px;
+        font-style: italic; }
+        @media only screen and (max-width: 48em) {
+          .landing-section .form .form-email .spam {
+            top: 50px; } }
+        @media only screen and (max-width: 40em) {
+          .landing-section .form .form-email .spam {
+            top: 45px; } }
